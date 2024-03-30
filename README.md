@@ -1,8 +1,9 @@
-# React + Vite
+# Starry-night
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+I really enjoy creating things which cause illusion of depth using parallax, blur and shadows. This one was created using ReactJS.  
+[placeholder-link](Try it out here)
 
-Currently, two official plugins are available:
+## Visuals
+![Starry-night](https://github.com/Himanshu-Lilhore/Starry-night/assets/63799853/cf75d1ae-37a0-4f1b-9b37-2548ceaa1f35)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
