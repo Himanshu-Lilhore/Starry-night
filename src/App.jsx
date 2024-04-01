@@ -50,7 +50,7 @@ export default  function App() {
     function animateTranslate(container, translateee) {
       container.animate({
         transform: translateee
-      }, { duration: 500, fill: 'forwards' })
+      }, { duration: 3000, fill: 'forwards' })
     }
   }, []);
 
@@ -67,7 +67,7 @@ export default  function App() {
         filter: `blur(1px)`,
       }}></div>
 
-      <div id='farthestest' style={{
+      <div id='farthestest' className='starLayers' style={{
         position: 'absolute',
         backgroundImage: `url('farthestest.svg')`,
         width: '120vw',
@@ -79,7 +79,7 @@ export default  function App() {
         transform: `translate(-10%)`
       }}></div>
 
-      <div id='farthest' style={{
+      <div id='farthest' className='starLayers' style={{
         position: 'absolute',
         backgroundImage: `url('farthest.svg')`,
         width: '120vw',
@@ -91,7 +91,7 @@ export default  function App() {
         transform: `translate(-10%)`
       }}></div>
 
-      <div id='mid' style={{
+      <div id='mid' className='starLayers' style={{
         position: 'absolute',
         backgroundImage: `url('mid.svg')`,
         width: '120vw',
@@ -103,7 +103,7 @@ export default  function App() {
         transform: `translate(-10%)`
       }}></div>
 
-      <div id='closest' style={{
+      <div id='closest' className='starLayers' style={{
         position: 'absolute',
         backgroundImage: `url('closest.svg')`,
         width: '120vw',
