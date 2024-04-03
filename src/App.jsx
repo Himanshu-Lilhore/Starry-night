@@ -67,7 +67,7 @@ export default  function App() {
         filter: `blur(1px)`,
       }}></div>
 
-      <div id='farthestest' className='starLayers' style={{
+      <div id='farthestest' style={{
         position: 'absolute',
         backgroundImage: `url('farthestest.svg')`,
         width: '120vw',
@@ -79,7 +79,7 @@ export default  function App() {
         transform: `translate(-10%)`
       }}></div>
 
-      <div id='farthest' className='starLayers' style={{
+      <div id='farthest' style={{
         position: 'absolute',
         backgroundImage: `url('farthest.svg')`,
         width: '120vw',
@@ -91,7 +91,7 @@ export default  function App() {
         transform: `translate(-10%)`
       }}></div>
 
-      <div id='mid' className='starLayers' style={{
+      <div id='mid' style={{
         position: 'absolute',
         backgroundImage: `url('mid.svg')`,
         width: '120vw',
@@ -103,7 +103,7 @@ export default  function App() {
         transform: `translate(-10%)`
       }}></div>
 
-      <div id='closest' className='starLayers' style={{
+      <div id='closest' style={{
         position: 'absolute',
         backgroundImage: `url('closest.svg')`,
         width: '120vw',
