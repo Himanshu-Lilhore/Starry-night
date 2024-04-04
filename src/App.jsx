@@ -1,12 +1,14 @@
 import { useEffect } from 'react';
 import './App.css'
 
+let cardContainer, cardContainer2, cardContainer3
+
 export default  function App() {
 
   useEffect(() => {
-    let cardContainer = document.querySelector('#farthest');
-    let cardContainer2 = document.querySelector('#mid');
-    let cardContainer3 = document.querySelector('#closest');
+    cardContainer = document.querySelector('#farthest')
+    cardContainer2 = document.querySelector('#mid')
+    cardContainer3 = document.querySelector('#closest')
 
     let windowWidth = window.innerWidth;
     let windowHeight = window.innerHeight;
@@ -16,6 +18,16 @@ export default  function App() {
     let lastMouseX = 99
     let lastMouseY = 99
 
+    cardContainer.style.transform = `translate(-3%)`
+    cardContainer2.style.transform = `translate(-6%)`
+    cardContainer3.style.transform = `translate(-15%)`
+
+    let translateStr = `translate(-3%)`
+    let translateStr2 = `translate(-6%)`
+    let translateStr3 = `translate(-15%)`
+    animateTranslate(cardContainer, translateStr)
+    animateTranslate(cardContainer2, translateStr2)
+    animateTranslate(cardContainer3, translateStr3)
 
     window.addEventListener('resize', function () {
       windowHeight = window.innerHeight;
@@ -24,8 +36,8 @@ export default  function App() {
 
 
     document.addEventListener('mousemove', function (event) {
-      let mouseX = event.clientX;
-      let mouseY = event.clientY;
+      let mouseX = event.clientX
+      let mouseY = event.clientY
 
       lastMouseX = mouseX
       lastMouseY = mouseY
@@ -37,10 +49,6 @@ export default  function App() {
       let translateStr2 = `translate(${xcovered * -6}%, ${ycovered * -6}%)`
       let translateStr3 = `translate(${xcovered * -15}%, ${ycovered * -15}%)`
 
-      cardContainer.style.transform = translateStr
-      cardContainer2.style.transform = translateStr2
-      cardContainer3.style.transform = translateStr3
-
       animateTranslate(cardContainer, translateStr)
       animateTranslate(cardContainer2, translateStr2)
       animateTranslate(cardContainer3, translateStr3)
@@ -50,7 +58,7 @@ export default  function App() {
     function animateTranslate(container, translateee) {
       container.animate({
         transform: translateee
-      }, { duration: 3000, fill: 'forwards' })
+      }, { duration: 5000, fill: 'forwards' })
     }
   }, []);
 
